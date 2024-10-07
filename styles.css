@@ -12,7 +12,7 @@ h1 {
     border-radius: 25px;
 }
 h2, p {
-    color: red;
+    color: var(--green);
 }
 @keyframes cursor {
     0% { opacity: 1; }
