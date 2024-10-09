@@ -120,7 +120,7 @@
   )
   (func $button (export "button")
     (call $fizzbuzz
-      (i32.const 255))
+      (i32.const 10000))
     (call $setInnerText
       (call $getElementById
         (call $str
