@@ -27,7 +27,8 @@ const importObject = {
   WebAssembly.instantiateStreaming(fetch("/algoritmizace/wasm.wasm"), importObject).then(
     (obj) => {
         button = obj.instance.exports.button;
-        console.log(obj.instance.exports.main());
+        let err = obj.instance.exports.main();
+        if (err !== 0) console.log(err);
     },
   );
   
