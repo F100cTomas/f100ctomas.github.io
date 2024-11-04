@@ -116,8 +116,7 @@
           (i32.add
             (local.get $i)
             (i32.const 1)))
-        (br $loop)))
-  )
+        (br $loop))))
   (func $button (export "button")
     (call $fizzbuzz
       (i32.const 10000))
