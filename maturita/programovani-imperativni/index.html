@@ -9,8 +9,9 @@
   <body>
     <h1>Programování - imperativní<span class = "cursor">█</span></h1>
     <h2>rozdíl mezi interpretovanými a kompilovanými jazyky</h2>
-    <p></p>
+    <p>Počítačové procesory rozumí jen jednomu jazyku, tomuto jazyku se říká strojový a není navržen, aby byl čitelný. K tomu byly navrženy různé programovací jazyky. Můžou se ale lišit tím, jakým způsobem se kód v jazyce přemění na spuštěný program.</p>
     <h3>kompilované</h3>
+    <p>Kompilované jazyky fungují tak, že překládají kód jazyka do kódu strojového. Výsledný soubor neobsahuje původní kód, ale strojový kód cílové platformy. Proto je software v kompilovaných programovacích jazycích nutno kompilovat pro různé operační systémy a růžné procesory. Výhodou je naopak vyšší rychlost. Kompilovaný soubor se totiž nemusí zabývat syntaxem původního jazyka a kompilátor ho může při kompilaci ještě optimalizovat.</p>
     <h4>Příklady</h4>
     <ul>
       <li>C</li>
@@ -24,7 +25,8 @@
     </ul>
     <p>Poznámka: Kompilace nemusí být vždy jen do strojového kódu, ale také do jiného programovacího jazyka. Takové kompilaci se říká transpilace a příkladem je Typescript.</p>
     <h3>interpretované</h3>
-    <!-- Poznámka: JIT-->
+    <p>Na opačné straně máme jazyky interpretované. Tyto jazyky přeskakují překlad to strojového kódu a rovnou vyhodnocují kód jako spuštěný program. To má za výsledek, že ke spuštění programu je potřeba mít na svém počítači naistalovaný interpreter, ale zato nemusíme vytvářet pro každou platformu jiný spustitelný soubor. Nevýhodou jsou pak pomalejší programy.</p>
+    <p>Poznámka: Některé interpretery zrychlují spouštění souborů tím, že si část kódu zkompilují. Tomu se říká Just-In-Time (JIT) kompilace. Programátorovi to však může být celkem jedno, protože zachází s úplně stejně.</p>
     <h4>Příklady</h4>
     <ul>
       <li>Python</li>
@@ -35,7 +37,7 @@
       <li>Perl</li>
       <li>Lisp</li>
     </ul>
-    <h3>Bytecode</h3>
+    <h3>bytecode</h3>
     <h4>Příklady</h4>
     <ul>
      <li>Java</li>
