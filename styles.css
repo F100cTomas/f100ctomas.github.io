@@ -1,14 +1,24 @@
 :root {
     --green: rgb(0, 255, 0);
     font-family: "Consolas", "Courier New", Courier, monospace; 
-    background-color: black;
+    background-color: rgb(24, 24, 24);
     color: var(--green);
 }
+body {
+    background-color: rgb(0, 0, 0);
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0;
+    margin-bottom: 0;
+    width: 80rem;
+    padding: 0.875rem;
+    border: 0.125rem solid var(--green);
+}
 h1 {
+    margin-top: 0;
     text-align: center;
     font-size: 100px;
     color: var(--green);
-    border: 10px solid;
     padding: 10px;
     border-radius: 25px;
 }
