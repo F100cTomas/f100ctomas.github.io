@@ -1,19 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Algoritmizace</title>
-    <link rel="stylesheet" href="/styles.css">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Algoritmizace</title>
+	<link rel="stylesheet" href="/styles.css">
 </head>
-  <body>
-    <h1>Algoritmizace<span class = "cursor">█</span></h1>
-    <h2>Algoritmus a jeho zápis</h2>
-    <p>Algoritmus je přesný návod či postup, kterým lze vyřešit daný typ úlohy. Pojem algoritmus se nejčastěji objevuje při programování, kdy se jím myslí teoretický princip řešení problému (oproti přesnému zápisu v konkrétním programovacím jazyce). Obecně se ale algoritmus může objevit v jakémkoli jiném vědeckém odvětví. Jako jistý druh algoritmu se může chápat i např. kuchařský recept. Zpravidla však na algoritmy klademe určitá omezení.</p>
-    <button id="lol" type="button" onclick="button()">Click Me!</button>
-    <div id="code">
-    </div>
-    <script defer src="maturita/algoritmizace/script.js">
-    </script>
-  </body>
+<body>
+	<h1>Algoritmizace<span class = "cursor">█</span></h1>
+
+	<h2>Algoritmus a jeho zápis</h2>
+	<p>
+		Algoritmus je přesný a konečný postup kroků, který vede k vyřešení určitého problému.
+		Lze jej zapisovat slovně, pomocí vývojových diagramů, pseudokódu nebo programovacím jazykem.
+		Pseudokód je text, který má vypadat, jako kód, ale nezajímá nás, jestli je možné ho spustit.
+		Dává nám představu, jak by algoritmus vypadal implementovaný.
+	</p>
+
+	<h2>Program vs algoritmus</h2>
+	<p>
+		Algoritmus je obecný postup řešení problému, zatímco program je konkrétní kód.
+		Narozdíl od algoritmů programy nemusí být konečné.
+	</p>
+
+	<h2>Základní vlastnosti algoritmu</h2>
+	<p>
+		Každý algoritmus má vstup a výstup. Dále mají algoritmy tyto vlastnosti:
+	</p>
+	<ul>
+		<li>Elementárnost - Algoritmus se skládá z jednotlivých kroků, které jsou sami o sobě snadné provést.</li>
+		<li>Jednoznačnost - Je vždy jasné, jaký krok má následovat, a co zahrnuje.</li>
+		<li>Konečnost - Každý algoritmus vyaduje pouze konečné množství kroků.</li>
+		<li>Obecnost - Algoritmus není řešení jednoho problému, ale jednoho druhu problémů. Nezáleží na konkrétních hodnotách, ale na obecné myšlence.</li>
+		<li>Správnost - Výstup je vždy správným řešením problému.</li>
+	</ul>
+
+	<h2>Časová a paměťová složitost algoritmu</h2>
+	<p>
+		Časová složitost popisuje, jak roste doba běhu algoritmu v závislosti na velikosti vstupu.
+		Paměťová složitost udává, kolik paměti algoritmus potřebuje.
+		Program s vyšší časovou složitostí nemusí nutně trvat kratší dobu, než program s nižší složitostí.
+		Složitost tedy udává, jak dobře by si algoritmus vedl, kdybychom mu dali složitější problém.
+		Často se vyjadřují pomocí velkého O (např. O(n), O(n²)).
+	</p>
+
+	<h2>známé algoritmy – Euklidův, Eratosthenovo síto, algoritmy třídění, kryptografie: frekvenční analýza, prohledávání do šířky, prohledávání do hloubky</h2>
+	<p>
+		Euklidův algoritmus slouží k výpočtu největšího společného dělitele.
+		Eratosthenovo síto slouží k hledání prvočísel.
+		K třídění existuje celá řada algoritmů, nejznámější např. bubblesort, insertionsort, quicksort, mergesort.
+		Frekvenční analýza se používá v kryptografii. Pomáhá nám luštit šifry pomocí porovnávání frekvence výskytu symbolů v šifrovaném a nešifrovaném textu.
+		Prohledávání do šířky (BFS) a do hloubky (DFS) slouží k průchodu grafů.
+	</p>
+</body>
 </html>

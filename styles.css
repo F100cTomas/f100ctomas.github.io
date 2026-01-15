@@ -30,27 +30,3 @@ h1 {
 .cursor {
     animation: cursor 1s steps(1) infinite;
 }
-.tierlist {
-    display: flex;
-    background-color: rgb(22, 34, 34);
-    flex-direction: column;
-    flex: 0.5rem;
-}
-.tierlist-row {
-    background-color: darkslategray;
-    margin: 0.25rem;
-    display: flex;
-    flex-direction: row;
-    line-height: 5rem;
-    color: white;
-    font-size: 1.5rem;
-}
-.tierlist-letter {
-    margin: 0;
-    margin-right: 2rem;
-    width: 5rem;
-    height: 5rem;
-    text-align: center;
-    font-size: 4rem;
-    color:white;
-}

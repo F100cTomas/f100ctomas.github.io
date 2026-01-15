@@ -1,68 +1,79 @@
 <!DOCTYPE html>
 <html lang="cs">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Programování - imperativní</title>
-    <link rel="stylesheet" href="/styles.css">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Programování - imperativní</title>
+	<link rel="stylesheet" href="/styles.css">
 </head>
 <body>
-    <h1>Programování - imperativní<span class="cursor">█</span></h1>
+	<h1>Programování - imperativní<span class="cursor">█</span></h1>
 
-    <h2>Programovací jazyky – porovnání</h2>
-    <p>
-      <div class="tierlist">
-      <div class="tierlist-row">
-        <div class="tierlist-letter" style="background-color: brown;">S</div>
-        Rust Go Zig
-      </div>
-      <div class="tierlist-row">
-        <div class="tierlist-letter" style="background-color: green;">A</div>
-        C TypeScript Kotlin Swift Haskell
-      </div>
-      <div class="tierlist-row">
-        <div class="tierlist-letter" style="background-color: rgb(189, 137, 5);">B</div>
-        C++ C# Ruby Lua
-      </div>
-      <div class="tierlist-row">
-        <div class="tierlist-letter" style="background-color: orangered;">C</div>
-        JavaScript PHP Bash
-      </div>
-      <div class="tierlist-row">
-        <div class="tierlist-letter" style="background-color: rgb(184, 14, 14);">D</div>
-        Python Perl VBA
-      </div>
-      <div class="tierlist-row">
-        <div class="tierlist-letter" style="background-color: purple;">F</div>
-        Cobol Fortran Visual Basic Java Powershell Vimscript
-      </div>
-    </div>
-    </p>
+	<h2>Programovací jazyky – porovnání</h2>
+	<p>
+		Programovací jazyky se liší syntaxí, výkonem, oblastí použití a úrovní abstrakce.
+		Například C je rychlý a nízkoúrovňový, Python je jednoduchý a přehledný,
+		Java je přenositelná a objektově orientovaná.
+	</p>
 
-    <h2>Rozdíl mezi interpretovanými a kompilovanými jazyky</h2>
-    <p>
-        <strong>Interpretované jazyky</strong> mají interpreter.
-        <strong>Kompilované jazyky</strong> mají compiler (kompilátor).
-    </p>
+	<h2>Rozdíl mezi interpretovanými a kompilovanými jazyky</h2>
+	<p>
+		Kompilované jazyky fungují tak, že compiler požadovaný program přeloží do jiného jazyka, většinou strojového kódu, který pak uživatel může spustit.<br>
+		Namísto toho interpretované jazyky fungují tak, že interpreter rovnou simuluje průběh programu při svém spuštění.<br>
+		Když program chce vypisovat text do terminálu, tak compiler vrátí kód pro vypisování do terminálu, zatímco interpreter rovnou vypíše požadovaný text do terminálu.
+	</p>
 
-    <h2>Proces vývoje software</h2>
-    <p>
-    </p>
+	<h2>Proces vývoje software</h2>
+	<p>
+		Zahrnuje analýzu problému, návrh řešení, implementaci, testování, nasazení a údržbu softwaru.
+	</p>
 
-    <h2>Proměnné a datové typy</h2>
-    <p>
-    </p>
+	<h2>Proměnné a datové typy</h2>
+	<p>
+		Proměnná je pojmenované místo v paměti pro ukládání hodnot. Hodnoty mají datové typy, které určují, jak lze manipulovat s uloženou hodnotou.
+		Datové typy se dělí na primitivní a složené. Primitivní datové typy jsou:
+		<ul>
+			<li>Celočíselné datové typu (se znaménkem / bez znaménka)</li>
+			<li>Číselné typy s pohyblivou desetinnou čárkou</li>
+			<li>Řetězce a znakové typy pro ukládání textu</li>
+			<li>Typy logických hodnot, booleany (pravda / nepravda)</li>
+		</ul>
+		Složené datové typy:
+		<ul>
+			<li>
+				Seznamy - sladují více hodnot většinou stejného datového typu za sebou. Členskou hodnotu získáme pomocí čísla,
+				(indexu) které označuje kterou položku v seznamu myslíme. Většinou začínáme počítat od 0.
+			</li>
+			<li>Slovníky (mapy) - Narozdíl od seznamů nemají požadavek, že členské hodnoty musí být označovány číslem, a i když číslem označovány jsou, tak není podmínka, že jsou indexy sousední čísla.</li>
+			<li>Třídy - Základní jednotka OOP. Umožňuje vytváření vlastních složených datových typů.</li>
+		</ul>
+		Některé programovací jazyky nemají řetězce jako samostatný typ. Místo toho používají seznamy znakových typů. Problémem je, že v Unicode se může jeden znak sladovat z více takových jednotek.
+		Většina jazyků nabízí kromě těchto složených datových typů celou řadu dalších, často v podobě tříd.
+	</p>
 
-    <h2>Vstup, výstup, práce s textovými řetězci, ošetření chyb</h2>
-    <p>
-    </p>
+	<h2>Vstup, výstup, práce s textovými řetězci, ošetření chyb</h2>
+	<p>
+		Programy berou vstup a vypisují výstup nejčastěji pomocí souborů. Soubory lze otevřít buď pro vstup, nebo pro výstup. Pro fungování příkazového řádku operační systémy
+		definují speciální soubory, které místo toho, aby svůj obsah psali na disk ho předávají terminálu. Tyto soubory jsou často tři: standardní vstup, stadardní výstup, a standardní chybový výstup.<br>
+		Dalším způsobem jakým mohou programy brát vstup jsou argumenty příkazového řádku, což je seznam řetězců, které program obdrží při svém spuštění.
+		Každý program při svém ukončení podává číselný kód, který informuje uživatele o průběhu programu. Nejčastější je kód 0, který neoznamuje žádnou chybu.<br>
+		Chyby se řeší v každém programovacím jazyce trochu jinak. Některé jazyky, včetně Pythonu, definují výjimky. (Exception) Když je podána výjimka, tak se program vrací, dokud nenarazí na
+		záchytný bod v podobě try-catch (v Pythonu try-except) bloku, který obsahuje kód, který danou výjimku řeší.
+		Alternativně je v některých jazycích standardní vracet namísto požadované hodnoty hodnotu prázdnou. Každý kód, který pak chce s hodnotou pracovat musí napřed zkontrolovat, zda není hodnota prázdná a
+		případně se pokusit chybu vyřešit.
+	</p>
 
-    <h2>Typy příkazů, nejdůležitější programovací konstrukce – cykly, větvení</h2>
-    <p>
-    </p>
+	<h2>Typy příkazů, nejdůležitější programovací konstrukce – cykly, větvení</h2>
+	<ul>
+		<li>if/else - Umožňuje větvení. Bere podmínku a na základě toho, zda dostance logickou hodnotu pravda nebo nepravda, spustí jeden ze dvou bloků kódu.</li>
+		<li>while - Jednoduchý cyklus. Bere podmínku a jestli se jedná o pravdivou hodnotu, tak spustí blok kódu. Na konci bloku to znova zkontroluje podmínku a přípdaně opakuje.</li>
+		<li>for - Existuje ve dvou podobách. První se chová jako while, ale s přidanou proměnnou, která je na konci bloku pozměněna. Druhý bere složený datový typ a spustí blok kódu pro každou členskou hodnotu.</li>
+	</ul>
 
-    <h2>Podprogramy</h2>
-    <p>
-    </p>
+	<h2>Podprogramy</h2>
+	<p>
+		Podprogramy, známé častěji jako funkce, jsou bloky kódu, které můžeme spustit kdekoliv v programu. Můžeme jim předat hodnoty v podobě argumentů, ketré uvnitř funkce vypadají, jako proměnné.
+		Některé jazyky rozlišují procedury a funkce podle toho, zda vrací, nebo nevrací hodnotu, ale v moderních jazycích to tak nebývá.
+	</p>
 </body>
 </html>

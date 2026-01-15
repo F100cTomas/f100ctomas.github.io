@@ -1,13 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Programování - objektové</title>
-    <link rel="stylesheet" href="/styles.css">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Programování - objektové</title>
+	<link rel="stylesheet" href="/styles.css">
 </head>
-  <body>
-    <h1>Programování - objektové<span class = "cursor">█</span></h1>
-    <p>Objektové orientování je když Java, a když Java, tak to není dobrá situace.</p>
-  </body>
+<body>
+	<h1>Programování - objektové<span class = "cursor">█</span></h1>
+
+	<h2>důvod a výhody OOP</h2>
+	<p>
+		OOP se snaží řešit problém imperativního programování, že když zavoláme funkci, tak nevíme, jestli pozměnila nějakou globální proměnnou a případně které.
+		U větších projektů tohle může vést k tzv. špagetovému programování, kde je struktura programu tak zamotaná, že je problém se v něm vyznat. <br>
+		OOP problém řeší pomocí tříd, které dávají kódu vyšší úroveň struktury. Třídy jsou nové datové typy, které můžeme definovat.
+		Třída se skládá z proměnných a funkcí a určuje si které jsou viditelné pro kód mimo třídu, a které jsou soukromé pouze pro členy třídy.
+	</p>
+
+	<h2>objekt</h2>
+	<p>
+		Třída je datový typ. Objekt je hodnota typu třídy. Objekt skladuje proměnné definované uvnitř třídy. Třída může mít více objektů a když zavoláme členskou funkci,
+		tak pro tu funkci to vypadá, že členské proměnné třídy mají hodnoty uloženné v objektu.
+	</p>
+
+	<h2>třída</h2>
+	<p>
+		Třída je šablona, podle které se vytvářejí objekty. Definuje atributy - členské proměnné a metody - členské funkce.
+		Třídy mají schopnost modelovat svět.
+	</p>
+
+	<h2>atributy</h2>
+	<p>
+		Atributy jsou proměnné skladované unitř objektu. Většinou se doporučuje je mít soukromé a s objektem zacházet pouze pomocí metod.
+	</p>
+
+	<h2>metody a konstruktor</h2>
+	<p>
+		Metody jsou funkce, které operaují na objektu. Metody jsou často implementované tak, že funkce berou objekt jako skrytý argument. V Pythonu tento argument
+		není tak úplně skrytý a nazývá se self.<br>
+		Konstruktor je speciální metoda, která se volá při vytváření objektu. Dostane prázdný objekt a jejím cílem je dát každému atributu počáteční hodnotu.<br>
+		Vedle konstruktoru existuje i destruktor, který držené hodnoty bezpečně uvolní.
+	</p>
+
+	<h2>zapouzdření, dědičnost a polymorfismus</h2>
+	<p>
+		Toto jsou základní pilíře OOP.<br>
+		Kromě těchto je pilířem OOP ještě abstrakce, která říká, že třídy definují rozhraní, (metody) pomocí kterého může kód snáze zacházet s daty.
+	</p>
+	<p>
+		Zapouzdření je vlastnost OOP skladovat objekty jiných tříd v objektu. Vstvením tříd lze dosáhnout komplikovaného chování bez toho, aniž bychom museli přemýšlet nad každou vrstvou naráz.
+	</p>
+	<p>
+		Dědičnost je schopnost OOP vytvářet nové třídy z jiných. Funguje tak, že k již existující třídě lze přidat nové atributy a metody..
+	</p>
+	<p>
+		Polymorfismus znamená, že dědící třída může přepsat chování metody děděné třídy. Tím způsobem lze vytvářet jednotná rozhraní, pomocí kterých může ten stejný kód zacházet s odlišnými druhy dat.
+	</p>
+</body>
 </html>
